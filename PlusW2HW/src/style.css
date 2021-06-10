@@ -1,0 +1,49 @@
+body {
+  border-style: solid;
+  border-color: #fdc4f1;
+}
+.cities,
+.nyc,
+.enter-city {
+  border-style: solid;
+  border-color: #80cbfb;
+  font-family: "Orelega One", cursive;
+  color: #fdc4f1;
+}
+.shanghai,
+.seattle,
+.submit-button {
+  border-style: solid;
+  border-color: #fdc4f1;
+  font-family: "Orelega One", cursive;
+  color: #80cbfb;
+}
+.searched-for-city {
+  color: #fdc4f1;
+  font-family: "Orelega One", cursive;
+}
+.city {
+  font-size: 80px;
+}
+.day-time,
+.weather {
+  font-size: 60px;
+}
+.current-temp {
+  font-size: 80px;
+  font-family: "Orelega One", cursive;
+  color: #fdc4f1;
+}
+.sunday,
+.tuesday,
+.thursday {
+  font-size: 40px;
+  font-family: "Orelega One", cursive;
+  color: #80cbfb;
+}
+.monday,
+.wednesday {
+  font-size: 40px;
+  font-family: "Orelega One", cursive;
+  color: #fdc4f1;
+}
