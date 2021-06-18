@@ -30,4 +30,8 @@ function displayWeather(response) {
   temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}°`;
   let descriptionElement = document.querySelector("#searched-weather");
   descriptionElement.innerHTML = response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity-value");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind-value");
+  windElement.innerHTML = response.data.wind.speed;
 }
