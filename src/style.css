@@ -52,3 +52,11 @@ body {
   font-family: "Orelega One", cursive;
   color: #fdc4f1;
 }
+
+#precipitation,
+#humidity,
+#wind {
+  font-size: 25px;
+  font-family: "Orelega One", cursive;
+  color: #fdc4f1;
+}
