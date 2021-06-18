@@ -60,3 +60,7 @@ body {
   font-family: "Orelega One", cursive;
   color: #fdc4f1;
 }
+
+#converter {
+  font-size: 30px;
+}
