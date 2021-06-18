@@ -1,7 +1,12 @@
 body {
   border-style: solid;
   border-color: #fdc4f1;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 221, 0.7) !important;
+  background-clip: padding-box;
+  max-width: 80%;
 }
+
 .cities,
 .nyc,
 .enter-city {
