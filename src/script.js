@@ -27,7 +27,7 @@ city.addEventListener("submit", getSearchedCity);
 
 function displayWeather(response) {
   console.log(response.data);
-  let temperatureElement = document.querySelector(".current-temp");
+  let temperatureElement = document.querySelector(".temperature");
   temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}°`;
   let descriptionElement = document.querySelector("#searched-weather");
   descriptionElement.innerHTML = response.data.weather[0].description;
