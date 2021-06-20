@@ -25,6 +25,42 @@ function getSearchedCity(event) {
 let city = document.querySelector("#main-form-city");
 city.addEventListener("submit", getSearchedCity);
 
+function popularCityShanghai(event) {
+  event.preventDefault();
+  let cityValue = document.querySelector("#shanghai-button");
+  let displayedCity = document.querySelector("#city-name-value");
+  displayedCity.innerHTML = `Shanghai`;
+  let apiKey = "e11ebc4d827268b35ca3d430280dba81";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Shanghai&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayWeather);
+}
+let shanghai = document.querySelector("#shanghai-button");
+shanghai.addEventListener("click", popularCityShanghai);
+
+function popularCityDublin(event) {
+  event.preventDefault();
+  let cityValue = document.querySelector("#dublin-button");
+  let displayedCity = document.querySelector("#city-name-value");
+  displayedCity.innerHTML = `Dublin`;
+  let apiKey = "e11ebc4d827268b35ca3d430280dba81";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Dublin&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayWeather);
+}
+let dublin = document.querySelector("#dublin-button");
+dublin.addEventListener("click", popularCityDublin);
+
+function popularCitySeattle(event) {
+  event.preventDefault();
+  let cityValue = document.querySelector("#seattle-button");
+  let displayedCity = document.querySelector("#city-name-value");
+  displayedCity.innerHTML = `Seattle`;
+  let apiKey = "e11ebc4d827268b35ca3d430280dba81";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Seattle&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayWeather);
+}
+let seattle = document.querySelector("#seattle-button");
+seattle.addEventListener("click", popularCitySeattle);
+
 function displayWeather(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector(".temperature");
