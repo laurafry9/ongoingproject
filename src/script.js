@@ -1,18 +1,3 @@
-let now = new Date();
-let dateDisplay = document.querySelector("h2.day-time");
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-let hours = now.getHours();
-let minutes = now.getMinutes();
-dateDisplay.innerHTML = `${day} ${hours}:${minutes}`;
 function getSearchedCity(event) {
   event.preventDefault();
   let cityValue = document.querySelector("#enter-city");
@@ -61,6 +46,11 @@ function popularCitySeattle(event) {
 let seattle = document.querySelector("#seattle-button");
 seattle.addEventListener("click", popularCitySeattle);
 
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = timestamp(response.data);
+}
+
 function displayWeather(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector(".temperature");
@@ -76,4 +66,6 @@ function displayWeather(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  let dateElement = document.querySelector("#date-element");
+  dateElement.innerHTML = `Friday 05:00`;
 }
