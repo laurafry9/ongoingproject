@@ -86,4 +86,16 @@ function displayWeather(response) {
   );
   let dateElement = document.querySelector("#date-element");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  celsiusTemp = response.data.main.temp;
 }
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let temperatureElement = document.querySelector(".temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let celsiusTemp = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
