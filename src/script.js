@@ -72,7 +72,7 @@ function formatDate(timestamp) {
 function displayWeather(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector(".temperature");
-  temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}°`;
+  temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}`;
   let descriptionElement = document.querySelector("#searched-weather");
   descriptionElement.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity-value");
@@ -90,12 +90,16 @@ function displayWeather(response) {
 }
 function displayFahrenheitTemp(event) {
   event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   let temperatureElement = document.querySelector(".temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
 function displayCelsiusTemp(event) {
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector(".temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemp);
 }

@@ -64,3 +64,33 @@ body {
 #searched-weather {
   text-transform: capitalize;
 }
+
+a {
+  color: #80cbfb;
+}
+
+a:link {
+  color: #80cbfb;
+}
+
+a:visited {
+  color: #80cbfb;
+}
+
+a:focus {
+  color: #80cbfb;
+}
+
+a:hover {
+  color: #80cbfb;
+}
+
+.weather-temperature .active {
+  color: #fdc4f1;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
