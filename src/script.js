@@ -111,3 +111,19 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
+
+//function forecastData(response) {
+//  console.log(response.data);
+//  let highTemperatureElement = document.querySelector("#sunday-high-temp");
+//  highTemperatureElement.innerHTML = `${Math.round(response.data.main.temp)}`;
+//}
+
+//function getForecastMonday(event) {
+  //event.preventDefault();
+  //let cityValue = document.querySelector("#enter-city");
+  //let apiKey = "e11ebc4d827268b35ca3d430280dba81";
+  //let apiUrl = `api.openweathermap.org/data/2.5/forecast?q=${cityValue}&appid=${apiKey}`;
+  //axios.get(apiUrl).then(forecastData);
+//}
+//let forecastCity = document.querySelector("#main-form-city");
+//forecastCity.addEventListener("submit", getForecastMonday);

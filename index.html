@@ -39,61 +39,66 @@
     /></a>
   </head>
   <body>
-    <div class="container">
-      <div class="row popular-cities">
-        <div class="col-3 cities"><h3>Popular Cities:</h3></div>
-        <div class="col-3 shanghai" id="shanghai-button"><h3>Shanghai</h3></div>
-        <div class="col-3 dublin" id="dublin-button"><h3>Dublin</h3></div>
-        <div class="col-3 seattle" id="seattle-button"><h3>Seattle</h3></div>
+    <div id="entire-app">
+      <div class="container">
+        <div class="row popular-cities">
+          <div class="col-3 cities"><h3>Popular Cities:</h3></div>
+          <div class="col-3 shanghai" id="shanghai-button">
+            <h3>Shanghai</h3>
+          </div>
+          <div class="col-3 dublin" id="dublin-button"><h3>Dublin</h3></div>
+          <div class="col-3 seattle" id="seattle-button"><h3>Seattle</h3></div>
+        </div>
+        <br />
+        <form id="main-form-city" class="main-form">
+          <input
+            class="enter-city"
+            id="enter-city"
+            type="text"
+            placeholder="Enter a City"
+            autocomplete="off"
+            autofocus="on"
+          />
+          <input class="submit-button" type="submit" value="Search!" />
+        </form>
+        <br />
+        <br />
       </div>
-      <br />
-      <form id="main-form-city" class="main-form">
-        <input
-          class="enter-city"
-          id="enter-city"
-          type="text"
-          placeholder="Enter a City"
-          autocomplete="off"
-          autofocus="on"
-        />
-        <input class="submit-button" type="submit" value="Search!" />
-      </form>
-      <br />
-      <br />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="searched-for-city">
-            <h1 id="city-name-value" class="city">Nashville</h1>
-            <h2 class="day-time">
-              Last updated: <span id="date-element"></span>
-            </h2>
-            <h2 id="searched-weather" class="weather">Sunny</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="searched-for-city">
+              <h1 id="city-name-value" class="city">Nashville</h1>
+              <h2 class="day-time" id="last-updated">
+                Last updated: <span id="date-element"></span>
+              </h2>
+              <h2 id="searched-weather" class="weather">Sunny</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="temperature-container">
+              <h1 id="searched-temp" class="current-temp">
+                <img id="icon" src="#" />
+                <div class="weather-temperature">
+                  <span class="temperature">85</span>
+                  <span class="unit">°</span>
+                  <small id="converter"
+                    ><a href="#" id="celsius-link" class="active">C</a> |
+                    <a href="#" id="fahrenheit-link">F</a></small
+                  >
+                </div>
+              </h1>
+              <h3 id="humidity">
+                Humidity: <span id="humidity-value"></span>%
+              </h3>
+              <h3 id="wind">Wind: <span id="wind-value"></span> km/h</h3>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="temperature-container">
-            <h1 id="searched-temp" class="current-temp">
-              <img id="icon" src="#" />
-              <div class="weather-temperature">
-                <span class="temperature">85</span>
-                <span class="unit">°</span>
-                <small id="converter"
-                  ><a href="#" id="celsius-link" class="active">C</a> |
-                  <a href="#" id="fahrenheit-link">F</a></small
-                >
-              </div>
-            </h1>
-            <h3 id="humidity">Humidity: <span id="humidity-value"></span>%</h3>
-            <h3 id="wind">Wind: <span id="wind-value"></span> km/h</h3>
-          </div>
-        </div>
       </div>
-    </div>
-    <br />
-    <br />
-    <div class="container">
+      <br />
+      <br />
+      <!--<div class="container">
       <div class="row">
         <div class="col sunday">
           <h1 class="sunday">Sunday</h1>
@@ -136,8 +141,9 @@
           </h3>
         </div>
       </div>
+    </div>-->
+      <script src="src/script.js"></script>
+      <a href="https://github.com/laurafry9/ongoingproject">Repository</a>
     </div>
-    <script src="src/script.js"></script>
-    <a href="https://github.com/laurafry9/ongoingproject">Repository</a>
   </body>
 </html>
